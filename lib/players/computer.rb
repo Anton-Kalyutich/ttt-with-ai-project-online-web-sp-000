@@ -4,10 +4,7 @@ module Players
     def move(board)
       return "5" if !board.taken?("5")
       av_odds = ["1", "3", "7", "9"].filter {|
-      return "1" if !board.taken?("1")
-      return "3" if !board.taken?("3")
-      return "7" if !board.taken?("7")
-      return "9" if !board.taken?("9")
+      
       return "2" if !board.taken?("2")
       return "4" if !board.taken?("4")
       return "6" if !board.taken?("6")
