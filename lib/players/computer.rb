@@ -3,7 +3,7 @@ module Players
     
     def move(board)
       return "5" if !board.taken?("5")
-      
+      ["1", "3", "7", "9"]
       return "1" if !board.taken?("1")
       return "3" if !board.taken?("3")
       return "7" if !board.taken?("7")
