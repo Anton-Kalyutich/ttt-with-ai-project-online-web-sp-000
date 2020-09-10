@@ -14,7 +14,7 @@ module Players
         !board.taken?(num)
       end
       
-      return 
+      return av_corners.sample if !av_corners.empty?
     end
     
   end
