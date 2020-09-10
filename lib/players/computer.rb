@@ -8,7 +8,7 @@ module Players
         !board.taken?(num)
       end
       
-      return av_odds.sample if !av_odds.empty?
+      return av_corners.sample if !av_corners.empty?
       
       return "2" if !board.taken?("2")
       return "4" if !board.taken?("4")
