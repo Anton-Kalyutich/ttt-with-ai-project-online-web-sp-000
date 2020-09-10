@@ -3,7 +3,9 @@ module Players
     
     def move(board)
       return "5" if !board.taken?("5")
-      av_odds = ["1", "3", "7", "9"].filter {|num| !board.taken?(num)}
+      av_odds = ["1", "3", "7", "9"].filter do |num|
+        !board.taken?(num)
+      end
       
       return "2" if !board.taken?("2")
       return "4" if !board.taken?("4")
