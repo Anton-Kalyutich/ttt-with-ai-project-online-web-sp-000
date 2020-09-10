@@ -2,6 +2,8 @@ module Players
   class Computer < Player
     
     def move(board)
+      
+      
       return "5" if !board.taken?("5")
       
       av_corners = ["1", "3", "7", "9"].select do |num|
