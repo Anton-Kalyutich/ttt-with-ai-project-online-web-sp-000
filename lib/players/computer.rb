@@ -14,10 +14,7 @@ module Players
         !board.taken?(num)
       end
       
-      return "2" if !board.taken?("2")
-      return "4" if !board.taken?("4")
-      return "6" if !board.taken?("6")
-      return "8" if !board.taken?("8")
+      return 
     end
     
   end
