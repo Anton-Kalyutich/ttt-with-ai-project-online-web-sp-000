@@ -10,6 +10,8 @@ module Players
       
       return av_corners.sample if !av_corners.empty?
       
+      av_rest = %w("2" "4" "6" "8")
+      
       return "2" if !board.taken?("2")
       return "4" if !board.taken?("4")
       return "6" if !board.taken?("6")
