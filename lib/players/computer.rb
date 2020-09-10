@@ -10,7 +10,9 @@ module Players
       
       return av_corners.sample if !av_corners.empty?
       
-      av_rest = %w("2" "4" "6" "8")
+      av_rest = ["2", "4", "6", "8"].filter do |num|
+        !board.taken?(num)
+      end
       
       return "2" if !board.taken?("2")
       return "4" if !board.taken?("4")
