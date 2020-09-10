@@ -2,7 +2,8 @@ module Players
   class Computer < Player
     
     def move(board)
-      
+      # I basically tell the AI to pick the middle if it can
+      # If it's taken already AI goes for a random pick from 
       
       return "5" if !board.taken?("5")
       
