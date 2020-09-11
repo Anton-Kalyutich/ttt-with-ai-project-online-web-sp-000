@@ -6,6 +6,7 @@ module Players
       # If it's taken already AI goes for a random pick from odd position numbers (corners)
       # Last resort is a random pick from even positions (everything besides the middle and the corners)
       
+      
       return "5" if !board.taken?("5")
       
       av_corners = ["1", "3", "7", "9"].select do |num|
